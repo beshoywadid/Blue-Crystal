@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>   
+    <meta charset ="utf-8"/>
+    <meta name="Blue Crystal" content="programming Languages,cyber security,AI,problem solving and data analysis"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="Blue Crystal.png">    
+    <script defer src="script.js"></script>
+    <title>Blue Crystal</title>
+    <nav class="navbar">
+        <h1 class="logo">Blue<span>Crystal</span></h1>
+        <ul class="nav-menu">
+        <li class="nav-item"><a href="Home.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="About.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="Help.html" class="nav-link">Help</a></li>
+        <li class="nav-item"><a href="Sign In.html" class="nav-link">Login/Register</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    <script>
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}))
+
+
+
+    </script>
+    
+    
+</head>
+<body>
+<h1 class="Heading">Programming Languages</h1>
+
+<div class="Con">
+    <div class="Html5">
+    <a href="Html5.html">
+    <img class="img1" src="Html.png" width="153px" height="157px">
+    </a>
+    <br>
+    <h3>HTML5</h3>
+    Video provides a powerful way<br>When you click Online Video,<br>you can paste in the embed code<br>You can also type a keyword<br>for the video that best fits.
+    </div>
+    <div class="Css3">
+        <a href="Css3.html">
+        <img class="img2" src="Css3.png" height="157px">
+        </a>
+        <br>
+        <h3>Css3</h3>
+    Video provides a powerful way<br>When you click Online Video,<br>you can paste in the embed code<br>You can also type a keyword<br>for the video that best fits.
+        </div>
+        <div class="Js">
+            <a href="Js.html">
+            <img class="img3" src="Js.png" width="133px" height="157px">
+            </a>
+            <br>
+            <h3>Js</h3>
+    Video provides a powerful way<br>When you click Online Video,<br>you can paste in the embed code<br>You can also type a keyword<br>for the video that best fits.
+            </div>
+            <div class="Php">
+                <a href="Php.html">
+                <img class="img4" src="Php.png" width="150px" height="157px">
+                </a>
+                <br>
+                <h3>Php</h3>
+    Video provides a powerful way<br>When you click Online Video,<br>you can paste in the embed code<br>You can also type a keyword<br>for the video that best fits.
+                </div>
+</div>
+    
+    
+    
+    
+</body>
+</html>
+
+
+
+
+
+

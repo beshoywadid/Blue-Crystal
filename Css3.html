@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>   
+    <meta charset ="utf-8"/>
+    <meta name="Blue Crystal" content="programming Languages,cyber security,AI,problem solving and data analysis"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="Blue Crystal.png">    
+    <script defer src="script.js"></script>
+    <title>Css3-Blue Crystal</title>
+    <nav class="navbar">
+        <h1 class="logo">Blue<span>Crystal</span></h1>
+        <ul class="nav-menu">
+        <li class="nav-item"><a href="Home.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="About.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="Help.html" class="nav-link">Help</a></li>
+        <li class="nav-item"><a href="Sign In.html" class="nav-link">Login/Register</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    <script>
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}))
+
+
+
+    </script>
+    
+    
+</head>
+<body>
+    <section class="CO">
+        <div class="card">
+        <div class="card-image2"></div>
+        <h3 class="h1">[Cascading Style Sheets]</h3>
+        <h5 class="p1">is a computer language for laying out and structuring web pages (HTML or XML). This language contains coding elements and is composed of these “cascading style sheets” which are equally called CSS files.</h5>
+        </div>
+        </section>
+    
+    
+    
+</body>
+</html>
